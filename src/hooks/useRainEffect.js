@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { generateEmptyGrid, getRandomColor } from '../utils/gridUtils';
 
 const DROP_LENGTH = 6;           // Length of each drop
-const UPDATE_INTERVAL = 15;      // How often the grid updates (ms)
-const DROP_SPEED = 2;            // How many rows each drop falls per update
-const MAX_ACTIVE_DROPS = 10;     // Max simultaneous falling drops
+const UPDATE_INTERVAL = 10;      // How often the grid updates (ms)
+const DROP_SPEED = 1;            // How many rows each drop falls per update
+const MAX_ACTIVE_DROPS = 7;     // Max simultaneous falling drops
 
 export const useRainEffect = (rows, cols) => {
   const [grid, setGrid] = useState(generateEmptyGrid(rows, cols));
